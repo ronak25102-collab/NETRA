@@ -1,0 +1,12 @@
+{
+  "name": "netra",
+  "version": "1.0.0",
+  "description": "N.E.T.R.A. — Networked Edge Tracking for Road Anomalies",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:web",
+    "dev:api": "cd netra-api && npm run dev",
+    "dev:web": "cd netra-web && npm run dev",
+    "install:all": "cd netra-api && npm install && cd ../netra-web && npm install"
+  }
+}
