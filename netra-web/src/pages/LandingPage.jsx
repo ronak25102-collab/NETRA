@@ -42,7 +42,7 @@ const FEATURES = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
-        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     tag: "01 / DETECT",
@@ -54,7 +54,7 @@ const FEATURES = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
-        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     tag: "02 / TRIAGE",
@@ -66,7 +66,7 @@ const FEATURES = [
   {
     icon: (
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-8 h-8">
-        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
     tag: "03 / CLOSE",
@@ -79,9 +79,9 @@ const FEATURES = [
 
 // ─── Stats data ───────────────────────────────────────────────────────────────
 const STATS_DATA = [
-  { value: 9438, suffix: "",  prefix: "",  label: "Road Accident Deaths (2020–24)", sub: "Chhattisgarh state data", color: "#dc2626" },
-  { value: 53,   suffix: "%", prefix: "+", label: "Surge in Highway Fatalities",    sub: "comparing 2019 vs 2024",  color: "#d97706" },
-  { value: 100,  suffix: "%", prefix: "",  label: "Autonomous Reporting Pipeline",  sub: "Zero human triggers needed", color: "#059669" },
+  { value: 9438, suffix: "", prefix: "", label: "Road Accident Deaths (2020–24)", sub: "Chhattisgarh state data", color: "#dc2626" },
+  { value: 53, suffix: "%", prefix: "+", label: "Surge in Highway Fatalities", sub: "comparing 2019 vs 2024", color: "#d97706" },
+  { value: 100, suffix: "%", prefix: "", label: "Autonomous Reporting Pipeline", sub: "Zero human triggers needed", color: "#059669" },
 ];
 
 // ─── Main component ───────────────────────────────────────────────────────────
@@ -91,8 +91,8 @@ export default function LandingPage() {
   const [statsRef, statsInView] = useInView(0.1);
 
   const count0 = useCounter(9438, 2200, statsInView);
-  const count1 = useCounter(53,   1800, statsInView);
-  const count2 = useCounter(100,  1600, statsInView);
+  const count1 = useCounter(53, 1800, statsInView);
+  const count2 = useCounter(100, 1600, statsInView);
   const counts = [count0, count1, count2];
 
   return (
@@ -293,7 +293,7 @@ export default function LandingPage() {
         </div>
         <div className="flex items-center gap-3 text-xs text-slate-500">
           <a href="mailto:support@codeflex.com" className="flex items-center gap-1.5 text-violet-700 hover:text-violet-900 font-semibold transition-colors">
-            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2" /><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" /></svg>
             support@codeflex.com
           </a>
         </div>
@@ -356,12 +356,12 @@ function FeatureCard({ icon, tag, title, desc, chips, accent, index }) {
 function PipelineDiagram() {
   const [ref, inView] = useInView(0.2);
   const steps = [
-    { label: "Drone / Sat / Cam", color: "#1e3a8a", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="1.8"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-    { label: "CV Detection",      color: "#1e3a8a", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="1.8"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" strokeLinecap="round" strokeLinejoin="round"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-    { label: "Risk Scoring",      color: "#c2410c", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="1.8"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-    { label: "PG Portal Filing",  color: "#c2410c", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="1.8"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-    { label: "Post-SLA Re-scan",  color: "#059669", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="1.8"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round"/></svg> },
-    { label: "Repair Verified",   color: "#059669", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round"/></svg> },
+    { label: "Drone / Sat / Cam", color: "#1e3a8a", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="1.8"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" strokeLinecap="round" strokeLinejoin="round" /></svg> },
+    { label: "CV Detection", color: "#1e3a8a", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#1e3a8a" strokeWidth="1.8"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" strokeLinecap="round" strokeLinejoin="round" /><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" strokeLinecap="round" strokeLinejoin="round" /></svg> },
+    { label: "Risk Scoring", color: "#c2410c", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="1.8"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" strokeLinecap="round" strokeLinejoin="round" /></svg> },
+    { label: "PG Portal Filing", color: "#c2410c", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#c2410c" strokeWidth="1.8"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" strokeLinecap="round" strokeLinejoin="round" /></svg> },
+    { label: "Post-SLA Re-scan", color: "#059669", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="1.8"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" strokeLinecap="round" strokeLinejoin="round" /></svg> },
+    { label: "Repair Verified", color: "#059669", icon: <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="#059669" strokeWidth="1.8"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" strokeLinecap="round" strokeLinejoin="round" /></svg> },
   ];
   return (
     <div ref={ref} className="mt-16 relative"

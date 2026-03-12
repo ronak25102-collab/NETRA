@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5000/api/potholes";
+const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:5001/api/potholes";
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_BASE}${path}`, {
@@ -38,10 +38,10 @@ export function mapPothole(p) {
 
   const pcu = p.dailyTrafficPCU ?? 0;
   let traffic;
-  if (pcu >= 10000) traffic = `Very Heavy (${(pcu/1000).toFixed(0)}k PCUs)`;
-  else if (pcu >= 7000) traffic = `Heavy (${(pcu/1000).toFixed(0)}k PCUs)`;
-  else if (pcu >= 3000) traffic = `Moderate (${(pcu/1000).toFixed(1)}k PCUs)`;
-  else if (pcu > 0) traffic = `Light (${(pcu/1000).toFixed(1)}k PCUs)`;
+  if (pcu >= 10000) traffic = `Very Heavy (${(pcu / 1000).toFixed(0)}k PCUs)`;
+  else if (pcu >= 7000) traffic = `Heavy (${(pcu / 1000).toFixed(0)}k PCUs)`;
+  else if (pcu >= 3000) traffic = `Moderate (${(pcu / 1000).toFixed(1)}k PCUs)`;
+  else if (pcu > 0) traffic = `Light (${(pcu / 1000).toFixed(1)}k PCUs)`;
   else traffic = "Unknown";
 
   return {
